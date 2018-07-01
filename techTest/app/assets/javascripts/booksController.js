@@ -8,7 +8,6 @@ fundThroughContoller.controller("booksCtrl", [
   	$scope.init = function() {
       service.getBooks("books")
         .success(function(response) {
-          console.log(response)
           $scope.books = response
         })
         .error(function() {
@@ -19,6 +18,5 @@ fundThroughContoller.controller("booksCtrl", [
   }])
 
 fundThroughContoller.controller("mainCtrl", [
-  function() {
-  }
+  function() {}
 ]);
