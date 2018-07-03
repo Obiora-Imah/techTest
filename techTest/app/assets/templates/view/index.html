@@ -1,19 +1,19 @@
 <div>
-	<h2>Top 10 NYT Hardcover Fiction Bestselle</h2>
-	<table>
-		<header>
-			<tr>
-				<th>Title</th>
-				<th>Author</th>
-				<th>Weeks on List</th>
-				<th>Position</th>
-			</tr>
-		</header>
-		<tr ng-repeat="book in books">
-			<td ng-bind="book.title"></td>
-			<td ng-bind="book.author"></td>
-			<td ng-bind="book.weeks_on_list"></td>
-			<td ng-bind="book.position"></td>
-		</tr>
-	</table>
+  <h2>Top 10 NYT Hardcover Fiction Bestselle</h2>
+  <table>
+    <header>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Weeks on List</th>
+        <th>Position</th>
+      </tr>
+    </header>
+      <tr ng-repeat="book in books">
+        <td ng-bind="book.title"></td>
+        <td ng-bind="book.author"></td>
+        <td ng-bind="book.weeks_on_list"></td>
+        <td ng-bind="book.position"></td>
+      </tr>
+  </table>
 </div>
